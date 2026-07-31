@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BAES — El peso justo, siempre | Soluciones de pesaje agroindustrial</title>
+<meta name="description" content="BAES fabrica balanzas y sistemas de pesaje para el agro: monoceldas, plataformas industriales, balanzas para hacienda, caballos y veterinaria. El peso justo, siempre.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Sprite SVG con los íconos de línea usados en catálogo -->
+<svg class="icon-sprite" aria-hidden="true">
+  <defs>
+    <symbol id="icon-platform" viewBox="0 0 48 48">
+      <rect x="4" y="20" width="40" height="16" rx="1.5"/>
+      <path d="M4 24 L44 24 M4 28 L44 28 M4 32 L44 32" opacity="0.5"/>
+      <rect x="10" y="36" width="10" height="6" rx="1"/>
+      <circle cx="34" cy="14" r="4"/>
+      <path d="M34 18 v2" />
+    </symbol>
+    <symbol id="icon-bridge" viewBox="0 0 48 48">
+      <rect x="4" y="22" width="16" height="12" rx="1.5"/>
+      <rect x="28" y="22" width="16" height="12" rx="1.5"/>
+      <path d="M20 26 H28 M20 30 H28" stroke-dasharray="2 2"/>
+      <path d="M8 34 V40 M40 34 V40" />
+      <path d="M4 40 H44" />
+    </symbol>
+    <symbol id="icon-industrial" viewBox="0 0 48 48">
+      <rect x="4" y="18" width="40" height="20" rx="1.5"/>
+      <path d="M4 24 L44 18 M4 30 L44 24 M4 36 L44 30" opacity="0.5"/>
+      <rect x="30" y="8" width="10" height="10" rx="1"/>
+      <path d="M35 18 v0" />
+    </symbol>
+    <symbol id="icon-bars" viewBox="0 0 48 48">
+      <rect x="4" y="18" width="18" height="8" rx="1.5"/>
+      <rect x="26" y="22" width="18" height="8" rx="1.5"/>
+      <path d="M8 26 v6 M18 26 v6 M30 30 v6 M40 30 v6" />
+    </symbol>
+    <symbol id="icon-kit" viewBox="0 0 48 48">
+      <rect x="6" y="18" width="36" height="20" rx="2"/>
+      <path d="M17 18 v-4 a2 2 0 0 1 2 -2 h10 a2 2 0 0 1 2 2 v4"/>
+      <path d="M6 26 H42" />
+      <rect x="21" y="23" width="6" height="6"/>
+    </symbol>
+    <symbol id="icon-horse" viewBox="0 0 48 48">
+      <path d="M10 38 V26 q0 -10 8 -14 q6 -3 11 0 l6 4 q3 2 3 5 v3" />
+      <path d="M35 19 l5 -3" />
+      <path d="M14 38 v-6 M22 38 v-6" />
+      <rect x="6" y="38" width="36" height="4" rx="1"/>
+      <circle cx="30" cy="15" r="1.4" fill="currentColor" stroke="none"/>
+    </symbol>
+    <symbol id="icon-vet" viewBox="0 0 48 48">
+      <rect x="6" y="26" width="36" height="12" rx="1.5"/>
+      <path d="M24 10 v12 M18 16 h12" />
+      <circle cx="24" cy="16" r="10" fill="none"/>
+    </symbol>
+    <symbol id="icon-cell-square" viewBox="0 0 48 48">
+      <rect x="9" y="9" width="30" height="30" rx="1.5"/>
+      <rect x="16" y="16" width="16" height="16" rx="1" opacity="0.5"/>
+      <circle cx="24" cy="24" r="2.4" fill="currentColor" stroke="none"/>
+    </symbol>
+    <symbol id="icon-cell-tray" viewBox="0 0 48 48">
+      <path d="M8 20 h32 l-4 14 a3 3 0 0 1 -3 2 H15 a3 3 0 0 1 -3 -2 Z"/>
+      <path d="M8 20 l4 -8 h24 l4 8" />
+    </symbol>
+    <symbol id="icon-beam" viewBox="0 0 48 48">
+      <rect x="4" y="21" width="40" height="6" rx="1.5"/>
+      <path d="M10 27 v11 M38 27 v11" />
+      <path d="M6 38 H16 M32 38 H42" />
+    </symbol>
+  </defs>
+</svg>
+
+<header class="site-header" id="top">
+  <div class="wrap header-inner">
+    <a href="#top" class="brand">
+      <img src="assets/logo-baes.png" alt="BAES — el peso justo" class="brand-logo">
+    </a>
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a href="#nosotros">Expo 2026</a>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a class="btn btn-whatsapp btn-small" href="https://wa.me/5491122476225" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" class="wa-icon" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.4-.1-.6.1s-.7.9-.9 1c-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.1.2-.3.2-.4.1-.1 0-.3 0-.4s-.6-1.4-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s1 2.5 1.1 2.7c.1.2 2 3 4.7 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z"/><path d="M12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.5A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .9.9-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+      <span>Hablar por WhatsApp</span>
+    </a>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-plate" aria-hidden="true"></div>
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <!-- <p class="eyebrow reveal">Fabricamos balanzas para el agro.</p> -->
+        <h1 class="reveal">
+          El peso justo,<br>
+          <span class="text-accent">siempre.</span>
+        </h1>
+        <p class="hero-lead reveal">
+          Diseñamos y fabricamos balanzas y sistemas de pesaje pensados para el campo argentino: robustos, precisos y listos para trabajar a la intemperie, todos los días del año.
+        </p>
+        <div class="hero-ctas reveal">
+          <a class="btn btn-whatsapp" href="https://wa.me/5491122476225" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" class="wa-icon" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.4-.1-.6.1s-.7.9-.9 1c-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.1.2-.3.2-.4.1-.1 0-.3 0-.4s-.6-1.4-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s1 2.5 1.1 2.7c.1.2 2 3 4.7 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z"/><path d="M12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.5A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .9.9-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+            Pedir presupuesto
+          </a>
+          <a class="btn btn-ghost" href="#catalogo">Ver catálogo</a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <!-- <div class="hero-frame">
+          <img src="assets/hero-product.png" alt="Perro sobre plataforma de pesaje BAES con indicador digital" class="hero-img">
+          <div class="lcd-chip lcd-float" data-weight-target="42.7">
+            <span class="lcd-dot"></span>
+            <span class="lcd-value"><span class="lcd-num">0.0</span> kg</span>
+          </div>
+        </div>
+        <p class="hero-caption">Plataforma monocelda con indicador de peso — salida de datos RS232</p>
+      </div> -->
+    </div>
+  </section>
+
+  <!-- SOMOS NOSOTROS -->
+  <section class="section section-nosotros" id="nosotros">
+    <div class="wrap nosotros-grid">
+      <div class="nosotros-copy reveal">
+        <p class="eyebrow">Expo Ganadera del Centro 2026</p>
+        <h2>17 Y 18 DE SEPTIEMBRE: BAES EN CENTRO DE CONVENCIONES CÓRDOBA</h2>
+        <p>
+          Desde Balanzas Baes queremos invitarlos a visitar nuestro stand durante la exposición.
+        </p>
+        <p>
+          Estaremos presentando nuestras soluciones de pesaje para el sector agropecuario e industrial, con equipos de fabricación nacional, asesoramiento personalizado y atención directa de nuestro equipo.
+        </p>
+        <div class="spec-row">
+          <div class="lcd-chip lcd-static">
+            <span class="lcd-value"> 900 A 1900 H</span>
+            <span class="lcd-label">capacidad</span>
+          </div>
+          <!-- <div class="lcd-chip lcd-static">
+            <span class="lcd-value"><span class="lcd-num" data-weight-target="10" data-decimals="0">0</span> gr</span>
+            <span class="lcd-label">resolución de fábrica</span>
+          </div> -->
+        </div>
+      </div>
+
+      <div class="nosotros-visual reveal">
+        <!-- <div class="steel-panel">
+          <div class="steel-panel-inner">
+            <p class="steel-badge">BAES</p>
+            <p class="steel-quote">"El peso justo, siempre."</p>
+            <p class="steel-sub">Fabricación propia · Fabricación a medida según la necesidad de cada cliente</p>
+          </div>
+        </div> -->
+        <img src="assets/equipo-baes.avif" alt="Stand de BAES en ExpoAgro" class="nosotros-img">
+      </div>
+    </div>
+
+    <!-- SLIDER CLIENTES -->
+    <div class="clients">
+      <p class="clients-label wrap">Empresas que confían en nosotros:</p>
+      <div class="marquee">
+        <div class="marquee-track">
+          <div class="marquee-item"><img src="assets/logos_chicos/1.png" alt="OCASA"></div>
+          <div class="marquee-item"><img src="assets/logos_chicos/2.png" alt="OCASA"></div>
+          <div class="marquee-item"><img src="assets/logos_chicos/3.png" alt="OCASA"></div>
+          <div class="marquee-item"><img src="assets/logos_chicos/4.png" alt="OCASA"></div>
+          <div class="marquee-item"><img src="assets/logos_chicos/5.png" alt="OCASA"></div>
+          <div class="marquee-item"><img src="assets/logos_chicos/6.png" alt="OCASA"></div>
+          <div class="marquee-item"><img src="assets/logos_chicos/7.png" alt="OCASA"></div>
+          <div class="marquee-item"><img src="assets/logos_chicos/8.png" alt="OCASA"></div>
+          <div class="marquee-item"><img src="assets/logos_chicos/9.png" alt="OCASA"></div>
+          <div class="marquee-item"><img src="assets/logos_chicos/10.png" alt="OCASA"></div>
+          <div class="marquee-item"><img src="assets/logos_chicos/11.png" alt="OCASA"></div>
+          <div class="marquee-item"><img src="assets/logos_chicos/12.png" alt="OCASA"></div>
+          
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- CATALOGO -->
+  <section class="section section-catalogo" id="catalogo">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Catálogo</p>
+        <h2>Una balanza para cada tarea del campo.</h2>
+        <p class="section-lead">Todas las balanzas pueden fabricarse a medida según la necesidad de cada cliente.</p>
+      </div>
+
+      <div class="catalog-grid">
+
+        <article class="product-card reveal">
+          <div class="product-media"><img src="assets/catalog/balanza-hacienda-corral.avif" alt="Balanza electrónica"></div>
+          <div class="product-body">
+            <h3>Balanza premium hacienda</h3>
+            <ul class="product-specs">
+              <li><span class="spec-check">✓</span>Plataformas robustas</li>
+              <li><span class="spec-check">✓</span>Capacidad máxima 1500&nbsp;kg · resolución 500&nbsp;g</li>
+              <li><span class="spec-check">✓</span>Medidas 45&nbsp;cm × 230&nbsp;cm</li>
+            </ul>
+            <br>
+            <a href="https://wa.me/5491168553135" target="_blank" rel="noopener" class="product-cta">Solicitar cotización →</a>
+          </div>
+        </article>
+
+        <article class="product-card reveal">
+          <div class="product-media"><img src="assets/catalog/balanza-piso-industrial.avif" alt="Balanza electrónica"></div>
+          <div class="product-body">
+            <h3>Plataforma industrial</h3>
+            <ul class="product-specs">
+              <li><span class="spec-check">✓</span>Plataformas para pesar pallets y bolsones</li>
+              <li><span class="spec-check">✓</span>Capacidad máxima 2000&nbsp;kg</li>
+              <li><span class="spec-check">✓</span>Medidas 120&nbsp;cm × 126&nbsp;cm</li>
+            </ul>
+            <br>
+            <a href="https://wa.me/5491168553135" target="_blank" rel="noopener" class="product-cta">Solicitar cotización →</a>
+          </div>
+        </article>
+
+        <article class="product-card reveal">
+          <div class="product-media"><img src="assets/catalog/service-tecnico-calibracion.avif" alt="Balanza electrónica"></div>
+          <div class="product-body">
+            <h3>Barras pesadoras T 1500</h3>
+            <ul class="product-specs">
+              <li><span class="spec-check">✓</span> Incluye indicador de peso con batería recargable, y cocodrilos para conexión a batería.</li>
+              <li><span class="spec-check">✓</span>Capacidad máxima 1500&nbsp;kg · resolución 500&nbsp;g</li>
+              <li><span class="spec-check">✓</span>Medidas 120&nbsp;cm × 8&nbsp;cm</li>
+            </ul>
+            <br>
+            <a href="https://wa.me/5491168553135" target="_blank" rel="noopener" class="product-cta">Solicitar cotización →</a>
+          </div>
+        </article>
+
+        <article class="product-card reveal">
+          <div class="product-media"><img src="assets/catalog/rampa-madera-hacienda.avif" alt="Balanza electrónica"></div>
+          <div class="product-body">
+            <h3>Mini barras con puente de madera quebracho</h3>
+            <ul class="product-specs">
+              <li><span class="spec-check">✓</span>Indicador de peso con salida de datos RS232</li>
+              <li><span class="spec-check">✓</span>Capacidad máxima 60&nbsp;kg · resolución 10&nbsp;g</li>
+              <li><span class="spec-check">✓</span>Medidas 80&nbsp;cm × 60&nbsp;cm</li>
+            </ul>
+            <br>
+            <a href="https://wa.me/5491168553135" target="_blank" rel="noopener" class="product-cta">Solicitar cotización →</a>
+          </div>
+        </article>
+
+        <article class="product-card reveal">
+          <div class="product-media"><img src="assets/catalog/1.avif" alt="Balanza electrónica"></div>
+          <div class="product-body">
+            <h3>Balanza Monocelda Premium 38x38</h3>
+            <ul class="product-specs">
+              <li><span class="spec-check">✓</span>Indicador de peso con salida de datos RS232</li>
+              <li><span class="spec-check">✓</span>Capacidad máxima 30&nbsp;kg · resolución 5&nbsp;g</li>
+              <li><span class="spec-check">✓</span>Medidas 38&nbsp;cm × 38&nbsp;cm</li>
+              <li><span class="spec-check">✓</span>Base bandeja en inox calidad 304</li>
+            </ul>
+            <br>
+            <a href="https://wa.me/5491168553135" target="_blank" rel="noopener" class="product-cta">Solicitar cotización →</a>
+          </div>
+        </article>
+
+        <article class="product-card reveal">
+          <div class="product-media"><img src="assets/catalog/4.avif" alt="Balanza electrónica"></div>
+          <div class="product-body">
+            <h3>Balanza Monocelda Premium 50x40</h3>
+            <ul class="product-specs">
+              <li><span class="spec-check">✓</span>Indicador de peso con salida de datos RS232</li>
+              <li><span class="spec-check">✓</span>Capacidad máxima 60&nbsp;kg · resolución 10&nbsp;g</li>
+              <li><span class="spec-check">✓</span>Medidas 50&nbsp;cm × 40&nbsp;cm</li>
+            </ul>
+            <br>
+            <a href="https://wa.me/5491168553135" target="_blank" rel="noopener" class="product-cta">Solicitar cotización →</a>
+          </div>
+        </article>
+
+        <article class="product-card reveal">
+          <div class="product-media"><img src="assets/catalog/3.avif" alt="Balanza electrónica"></div>
+          <div class="product-body">
+            <h3>Balanza Monocelda Premium 45x45</h3>
+            <ul class="product-specs">
+              <li><span class="spec-check">✓</span>Indicador de peso con salida de datos RS232</li>
+              <li><span class="spec-check">✓</span>Capacidad máxima 60&nbsp;kg · resolución 10&nbsp;g</li>
+              <li><span class="spec-check">✓</span>Medidas 45&nbsp;cm × 45&nbsp;cm</li>
+            </ul>
+            <br>
+            <a href="https://wa.me/5491168553135" target="_blank" rel="noopener" class="product-cta">Solicitar cotización →</a>
+          </div>
+        </article>
+
+        <article class="product-card reveal">
+          <div class="product-media"><img src="assets/catalog/2.avif" alt="Balanza electrónica"></div>
+          <div class="product-body">
+            <h3>Balanza Monocelda Premium 60x60</h3>
+            <ul class="product-specs">
+              <li><span class="spec-check">✓</span>Indicador de peso con salida de datos RS232</li>
+              <li><span class="spec-check">✓</span>Capacidad máxima 60&nbsp;kg · resolución 10&nbsp;g</li>
+              <li><span class="spec-check">✓</span>Medidas 60&nbsp;cm × 60&nbsp;cm</li>
+            </ul>
+            <br>
+            <a href="https://wa.me/5491168553135" target="_blank" rel="noopener" class="product-cta">Solicitar cotización →</a>
+          </div>
+        </article>
+
+        <article class="product-card reveal">
+          <div class="product-media"><img src="assets/catalog/5.avif" alt="Balanza electrónica"></div>
+          <div class="product-body">
+            <h3>Balanza para Veterinaria 60x80</h3>
+            <ul class="product-specs">
+              <li><span class="spec-check">✓</span>Indicador de peso con salida de datos RS232</li>
+              <li><span class="spec-check">✓</span>Capacidad máxima 60&nbsp;kg · resolución 10&nbsp;g</li>
+              <li><span class="spec-check">✓</span>Medidas 60&nbsp;cm × 80&nbsp;cm</li>
+            </ul>
+            <br>
+            <a href="https://wa.me/5491168553135" target="_blank" rel="noopener" class="product-cta">Solicitar cotización →</a>
+          </div>
+        </article>
+
+        <article class="product-card reveal">
+          <div class="product-media"><img src="assets/catalog/7.avif" alt="Balanza electrónica"></div>
+          <div class="product-body">
+            <h3>Balanza para Caballos 240x85</h3>
+            <ul class="product-specs">
+              <li><span class="spec-check">✓</span>Indicador de peso con salida de datos RS232</li>
+              <li><span class="spec-check">✓</span>Capacidad máxima 60&nbsp;kg · resolución 10&nbsp;g</li>
+              <li><span class="spec-check">✓</span>Medidas 80&nbsp;cm × 60&nbsp;cm</li>
+            </ul>
+            <br>
+            <a href="https://wa.me/5491168553135" target="_blank" rel="noopener" class="product-cta">Solicitar cotización →</a>
+          </div>
+        </article>
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta-final" id="contacto">
+    <div class="cta-plate" aria-hidden="true"></div>
+    <div class="wrap cta-inner reveal">
+      <p class="eyebrow eyebrow-light">con baes, el peso justo, siempre.</p>
+      <h2>Contanos y encontramos tu solución.</h2>
+      <a class="btn btn-whatsapp btn-large" href="https://wa.me/5491122476225" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" class="wa-icon" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.4-.1-.6.1s-.7.9-.9 1c-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.1.2-.3.2-.4.1-.1 0-.3 0-.4s-.6-1.4-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s1 2.5 1.1 2.7c.1.2 2 3 4.7 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z"/><path d="M12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.5A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .9.9-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+        +54 9 11 2247-6225
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo-chip"><img src="assets/logo-baes.png" alt="BAES — el peso justo"></div>
+      
+      <p>Fabricación de balanzas, calibración y reparación.</p>
+    </div>
+
+    <div class="footer-col">
+      <p class="footer-heading">Contacto</p>
+      <a href="https://wa.me/5491122476225" target="_blank" rel="noopener">WhatsApp: +54 9 11 2247-6225</a>
+      <p>Belgrano 1704, Quilmes</p>
+    </div>
+
+    <div class="footer-col">
+      <p class="footer-heading">Redes</p>
+      <a href="https://instagram.com/balanzasbaes.agro" target="_blank" rel="noopener">Instagram — @balanzasbaes.agro</a>
+      <a href="https://tiktok.com/@balanzasbaes" target="_blank" rel="noopener">TikTok — @balanzasbaes</a>
+      <a href="#" target="_blank" rel="noopener">Facebook — Balanzas Baes</a>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <p>© <span id="year"></span> BAES. El peso justo, siempre.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
