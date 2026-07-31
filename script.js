@@ -81,3 +81,18 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 });
+
+// CARROUSEL
+const slides = document.querySelectorAll(".carousel-img");
+
+let actual = 0;
+
+setInterval(() => {
+
+    slides[actual].classList.remove("active");
+
+    actual = (actual + 1) % slides.length;
+
+    slides[actual].classList.add("active");
+
+}, 3500);

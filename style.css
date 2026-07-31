@@ -265,15 +265,39 @@ p{ margin:0 0 1em; line-height:1.6; color:var(--ink-soft); }
 
 .spec-row{ display:flex; gap:14px; flex-wrap:wrap; margin-top:28px; }
 
-.nosotros-visual{ position:relative; }
+.nosotros-visual{ position:relative; width: 100%; aspect-ratio: 3 / 2;}
 
-.nosotros-img{
+/* .nosotros-img{
     width:100%;
     height:100%;
     display:block;
     object-fit:cover;
     border-radius:16px; /* o el mismo radio que tenía el panel */
+    
+.carousel{
+    position:absolute;
+    inset:0;
+}
+
+.carousel-img{
+    position:absolute;
+    inset:0;
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+    border-radius:16px;
     box-shadow:0 15px 40px rgba(0,0,0,.15);
+
+    opacity:0;
+    transition:opacity .9s ease;
+
+    display:block;
+}
+
+.carousel-img.active{
+    opacity:1;
 }
 .steel-panel{
   aspect-ratio:4/5;
@@ -327,7 +351,7 @@ p{ margin:0 0 1em; line-height:1.6; color:var(--ink-soft); }
 .marquee-track{
   display:flex;
   align-items:center;
-  gap:40px;
+  gap:10px;
   width:max-content;
   animation:marquee 20s linear infinite;
 }
