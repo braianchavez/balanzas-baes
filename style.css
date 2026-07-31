@@ -513,7 +513,7 @@ p{ margin:0 0 1em; line-height:1.6; color:var(--ink-soft); }
   .footer-inner{ grid-template-columns:1fr; }
 }
 
-@media (prefers-reduced-motion: reduce){
+/* @media (prefers-reduced-motion: reduce){
   *{ animation-duration:.001ms !important; animation-iteration-count:1 !important; transition-duration:.001ms !important; }
   html{ scroll-behavior:auto; }
-}
+} */
