@@ -429,7 +429,7 @@ p{ margin:0 0 1em; line-height:1.6; color:var(--ink-soft); }
     width: 100%;
     height: 100%;
     
-    object-fit: cover; /* o contain si no querés que recorte */
+    object-fit: contain; /* o contain si no querés que recorte */
     display: block;
 }
 .product-media-fallback{ width:70%; }
